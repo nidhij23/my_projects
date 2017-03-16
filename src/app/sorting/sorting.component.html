@@ -1,0 +1,32 @@
+
+<table>
+  <div class="tile">
+  <th>Employeee ID</th>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Date Of Joining</th>
+  <tr *ngFor="let name of names | sortingPipe:sorting_arg ">
+  
+    
+      <td>{{name.id}}</td>
+      <td>{{name.first_name}}</td>
+      <td>{{name.last_name}}</td>
+      <td>{{name.date_of_joining  | date: 'dd/MMM/yyyy'}}</td>
+    
+</tr>
+
+  </div>
+</table>
+
+<button class="btn btn-default" (click)="sort_argument('first_name')">Sort by First Name</button>
+<button class="btn btn-default" (click)="sort_argument('last_name')">Sort by Last Name</button>
+<button class="btn btn-default" (click)="sort_argument('id')">Sort by Employee ID</button>
+<button class="btn btn-default" (click)="sort_argument('date_of_joining')">Sort by Joining Date</button>
+
+
+ <p>Sorted by {{sorting_arg}}</p>
+ 
+<!-- <select id="drop_d" onchange="sort_it(opt.filter)">
+   <option *ngFor="let opt of sorting_list">{{opt.text}}</option>
+ </select>-->
+

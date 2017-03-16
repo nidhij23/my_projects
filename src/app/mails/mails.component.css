@@ -1,0 +1,35 @@
+.card{
+    background-color: #F3F0F0;
+    height:200px;
+    padding:2%;
+    margin:1%;
+
+}
+.heading{
+    padding:2%;
+    background-color:#E7E2E2;
+}
+.footer{
+    color:grey;
+    margin:1%;
+    
+}
+
+.subject{
+    height:60px;
+    line-height: 60px;
+}
+
+span{
+    margin-left:2%;
+    margin-right:2%;
+}
+
+
+.card2{
+    background-color:grey;
+    height:100px;
+    width:400px;
+    z-index:9299;
+    position:fixed;
+}

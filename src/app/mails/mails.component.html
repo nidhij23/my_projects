@@ -1,0 +1,33 @@
+<div class="container">
+  <p>
+    mails works!
+  </p>
+  <!--
+<input type="text" [(ngModel)]="name1">
+<input type="text"[(ngModel)]="name2">
+<button class="btn btn-primary"(click)="show()">Show</button><br>
+
+<div *ngIf="hello" class="row card2">
+  <p>hbdhdh</p><br>
+  
+<p>afhafhfhh</p><br>
+<span (click)="hide()" class="glyphicon glyphicon-remove"></span>
+-->
+  <input type="text" id="name" #postdata><button (click)="star_mail(postdata.value)" class="btn btn-primary">Post data</button>
+  <div class="card col-lg-6" *ngFor="let card of card_holder2">
+    <div class="col-lg-12 heading">
+      {{card.property1}}
+      <span class="glyphicon glyphicon-star-empty" (click)="star_mail(false)" id="star" style="float:right;"></span>
+<span class="glyphicon glyphicon-envelope" id="envelope" aria-hidden="true" style="float:right;"></span>
+</div>
+<div class="col-lg-12 subject">
+  <p>{{card.property2}}</p>
+</div>
+<div class="col-lg-12 footer"> {{card.property3}}{{card.property4}}</div>
+<div class="col-lg-12 menus">
+  <a (click)="star_mail(true)">Set Star</a>
+  <a>Delete</a>
+</div>
+<hr>
+</div>
+</div>
